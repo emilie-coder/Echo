@@ -1,0 +1,66 @@
+@import '../../styling/colors.css';
+/* 
+--white: #fff;
+--black: #000;
+--main-color: #79155B;
+--secondary-color: #C23373;
+--accent-color-a: #F6635C;
+--accent-color-b: #FFBA86;
+ */
+
+.header {
+  background-color: var(--white);
+  padding-top: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 97%;
+  position: fixed;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.leftLogo, .userStates *, .middleLinks * {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.userStates, .middleLinks {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.leftLogo:hover, .middleLinks *:hover , .userStates *:hover{
+  scale: 110%;
+}
+
+.leftLogo:active, .userStates *:active, .middleLinks *:active  {
+  scale: 100%;
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--black);
+  transition: transform 0.15s ease;
+}
+
+a:hover{
+  color: var(--accent-color-a);
+  transform: scale(1.01);
+}
+
+a:active{
+  color: var(--black);
+  transform: scale(0.9);
+}

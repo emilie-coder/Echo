@@ -1,0 +1,101 @@
+@import '../../styling/colors.css';
+
+.dashboard {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    align-self: center;
+    justify-self: center;
+    /* margin: 2%; */
+  }
+  
+  .personalInfo {
+    display: flex;
+    flex-direction: column;
+    width: 95.5%;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 2%;
+  }
+  
+  .projectsSection {
+    width: 95.5%;
+    margin: 2%;
+  }
+  
+  .projectList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95.5%;
+    margin-top: 10px;
+    margin: 2%;
+  }
+  
+  .projectItem {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    height: 200px;
+    justify-items: center;
+    align-items: center;
+    margin: 5px;
+  }
+  
+  .projectItemTitle{
+    font-size: 20px;
+  }
+
+  .projectSubtitle{
+    padding-top: 5px;
+    font-size: 10px;
+    color:#4e4e4e
+  }
+
+  .projectImg {
+    margin-top: 20px;
+    width: 80%;
+    border-radius: 10px;;
+  }
+
+  .projectItem:hover {
+    scale: 1.01;
+    background-color:  var(--accent-color-a);
+  }
+
+  .projectItem:active {
+    scale: 0.99;
+    background-color: var(--accent-color-b);
+  }
+
+
+  .createButton {
+    background-color: #4e4e4e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+  
+  .createButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .collectionsSection {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
